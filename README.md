@@ -1,5 +1,61 @@
 
+<details>
+<summary>Table of content</summary>
+
+## Table of content
+
+- [General](#general)
+- [Courses](#courses)
+- [Some biology](#some-biology)
+- [Some statistics](#some-statistics)
+- [linear algebra](#linear-algebra)
+  - [Bayesian Statistics](#bayesian-statistics)
+- [Learning Latex](#learning-latex)
+- [Linux commands](#linux-commands)
+- [Do not give me excel files!](#do-not-give-me-excel-files)
+- [How to name files](#how-to-name-files)
+- [parallelization](#parallelization)
+- [Statistics](#statistics)
+- [Data transfer](#data-transfer)
+- [Website](#website)
+- [profile R code](#profile-r-code)
+- [updating R](#updating-r)
+- [Better R code](#better-r-code)
+- [Shiny App](#shiny-app)
+- [R tools for data wrangling, tidying and visualizing.](#r-tools-for-data-wrangling-tidying-and-visualizing)
+- [Sankey graph](#sankey-graph)
+- [Handling big data in R](#handling-big-data-in-r)
+- [Write your own R package](#write-your-own-r-package)
+- [Documentation](#documentation)
+- [handling arguments at the command line](#handling-arguments-at-the-command-line)
+- [visualization in general](#visualization-in-general)
+- [Javascript](#javascript)
+- [python tips and tools](#python-tips-and-tools)
+- [machine learning](#machine-learning)
+- [Amazon cloud computing](#amazon-cloud-computing)
+- [Genomics-visualization-tools](#genomics-visualization-tools)
+- [Databases](#databases)
+- [Large data consortium data mining](#large-data-consortium-data-mining)
+- [Integrative analysis](#integrative-analysis)
+- [Interactive visualization](#interactive-visualization)
+- [Tutorials](#tutorials)
+- [MOOC(Massive Open Online Courses)](#moocmassive-open-online-courses)
+- [git and version control](#git-and-version-control)
+- [blogs](#blogs)
+- [data management](#data-management)
+- [Automate your workflow, open science and reproducible research](#automate-your-workflow-open-science-and-reproducible-research)
+- [Survival curve](#survival-curve)
+- [Organize research for a group](#organize-research-for-a-group)
+- [Clustering](#clustering)
+- [CRISPR related](#crispr-related)
+- [vector arts for life sciences](#vector-arts-for-life-sciences)
+
+</details>
+
+
+
 ### General
+
 * [So you want to be a computational biologist?](http://www.nature.com/nbt/journal/v31/n11/full/nbt.2740.html)
 * [Ten simple rules for biologists learning to program](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005871)
 * [Scientific computing: Code alert](http://www.nature.com/naturejobs/science/articles/10.1038/nj7638-563a?WT.mc_id=TWT_NatureNews) Nature News.
@@ -10,13 +66,14 @@
 * [Learning Statistics with R](https://learningstatisticswithr.com/)
 * [Hands-on Machine Learning with R](https://bradleyboehmke.github.io/HOML/)
 * [Reproducible Research Workflows with Snakemake and R](https://lachlandeer.github.io/snakemake-econ-r-tutorial/)
-* [The Biologist’s Guide to Computing](http://book.biologistsguide2computing.com/en/stable/) A book written by @tjelvar_olsson 
-* [A Primer for Computational Biology](http://library.open.oregonstate.edu/computationalbiology/) A nice book from Oregon State University. You can get a hard copy on Amazon https://www.amazon.com/Primer-Computational-Biology-Shawn-ONeil/dp/0870719262. 
+* [The Biologist’s Guide to Computing](http://book.biologistsguide2computing.com/en/stable/) A book written by @tjelvar_olsson
+* [A Primer for Computational Biology](http://library.open.oregonstate.edu/computationalbiology/) A nice book from Oregon State University. You can get a hard copy on Amazon https://www.amazon.com/Primer-Computational-Biology-Shawn-ONeil/dp/0870719262.
 * [Computational Genomics With R](http://compgenomr.github.io/book/) A nice book from Altuna Akalin.
 * [Modern Statistics for Modern Biology](http://web.stanford.edu/class/bios221/book/) written by Prof. Susan Holmes from Stanford. I plan to read through it. a nice book using R for modern biology! looks awesome!
 * [An Introduction To Applied Bioinformatics](https://github.com/caporaso-lab/An-Introduction-To-Applied-Bioinformatics) Interactive lessons in bioinformatics
 * [Feature Engineering and Selection: A Practical Approach for Predictive Models](https://github.com/topepo/FES) by Kuhn and Johnson https://bookdown.org/max/FES
 * [Agile Data Science with R](https://edwinth.github.io/ADSwR/index.html)
+* [Offensieve programming book](https://neonira.github.io/offensiveProgrammingBook_v1.2.1/) in R.
 * [The Biostar Handbook: A Beginner's Guide to Bioinformatics](http://read.biostarhandbook.com/?q=) I am honored to be a co-author of this book. My ChIP-seq section was released by the mid of 2017.
 * [Beginner's Handbook to Next Generation Sequencing](https://genohub.com/next-generation-sequencing-handbook/) Everything you need to know about starting a sequencing project
 * [Another Book on Data Science:Learn R and Python in Parallel](https://www.anotherbookondatascience.com/) compares R and python side by side.
@@ -34,12 +91,14 @@
 ](http://education.knoweng.org/sequenceng/)
 
 ### Courses
+
+* [The Missing Semester of Your CS Education](https://missing.csail.mit.edu/) These MIT Classes teach you all about advanced topics within CS, from operating systems to machine learning, but there’s one critical subject that’s rarely covered, and is instead left to students to figure out on their own: proficiency with their tools. We’ll teach you how to master the command-line, use a powerful text editor, use fancy features of version control systems, and much more!
 * [applied computational genomics](https://github.com/quinlan-lab/applied-computational-genomics#course-lecture-slides) by Aaron Quinlan, the creator of bedtools and many other cool tools.
 * [BMMB 852: Applied Bioinformatics (Fall, 2016)](https://www.ialbert.me/) by Istvan Albert, the creator of [biostars](https://www.biostars.org/).
 * [JHU EN.600.649: Computational Genomics: Applied Comparative Genomics](https://github.com/schatzlab/appliedgenomics) by Michael Schatz.
 * [Introduction to Computational Biology](https://biodatascience.github.io/compbio/) by Mike Love.
 * [Advanced Data Science](http://jtleek.com/advdatasci/index.html) by Jeff Leek.
-* [Data Science for Biological, Medical and Health Research: Notes for 431](https://thomaselove.github.io/431notes/index.html): R focused
+* [Data Science for Biological, Medical and Health Research: Notes for 431](https://thomaselove.github.io/2018-431-book/data-science.html): R focused
 * Various [TeachingMaterial](https://github.com/lgatto/TeachingMaterial) collected by Laurent Gatto.
 * [NGS sequence analysis](https://bioinf.comav.upv.es/courses/sequence_analysis/index.html)
 * [bioinformatics-workbook](https://isugenomics.github.io/bioinformatics-workbook/)
@@ -48,9 +107,11 @@
 * [MIT Computational Biology: Genomes, Networks, Evolution, Health - Fall 2018 - 6.047/6.878/HST.507](https://www.youtube.com/playlist?list=PLypiXJdtIca6GBQwDTo4bIEDV8F4RcAgt)by Manolis Kellis
 * [MIT machine learning in Genomics](https://www.youtube.com/playlist?list=PLypiXJdtIca6U5uQOCHjP9Op3gpa177fK) by Manolis Kellis.
 * [MIT linear algebra course by Gilbert Strang ](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/)
+* [A 2020 Vision of Linear Algebra](https://ocw.mit.edu/resources/res-18-010-a-2020-vision-of-linear-algebra-spring-2020/index.htm) by Gilbert Strang
 * [Generalized Additive Models in R](https://noamross.github.io/gams-in-r-course/) This short course will teach you how to use these flexible, powerful tools to model data and solve data science problems. GAMs offer offer a middle ground between simple linear models and complex machine-learning techniques, allowing you to model and understand complex systems.
 
 ### Some biology
+
 If you are from fields outside of biology, places to get you started:
 
 * [Tales from the Genome](https://www.udacity.com/course/tales-from-the-genome--bio110) A course by Udacity and 23andMe.
@@ -63,17 +124,22 @@ If you are from fields outside of biology, places to get you started:
 ### Some statistics
 
 * [Elementary Statistical Modeling for Applied Biostatistics](https://www.middleprofessor.com/files/applied-biostatistics_bookdown/_book/) I plan to read this one!!
-* [seeing theory](http://students.brown.edu/seeing-theory/index.html) The goal of the project is to make statistics more accessible to a wider range of students through interactive visualizations. 
+* [seeing theory](http://students.brown.edu/seeing-theory/index.html) The goal of the project is to make statistics more accessible to a wider range of students through interactive visualizations.
 * [Points of Significance: Interpreting P values](http://www.nature.com/nmeth/journal/v14/n3/full/nmeth.4210.html)
 * [statistics for biologists](http://www.nature.com/collections/qghhqm/pointsofsignificance)
 * [Advanced Statistical Computing](https://bookdown.org/rdpeng/advstatcomp/) by Roger Peng.
 * [fiveMinuteStats](http://stephens999.github.io/fiveMinuteStats/index.html#inference)
+* [Learning Statistics with R](https://learningstatisticswithr.com/)
+* [Statistical Modeling of High Dimensional Counts](https://mikelove.github.io/counts-model/) by Mike love on RNAseq counts modeling.
 
 ### linear algebra
+
 * [Essence of linear algebra](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab) by threebrownoneblue
 * [18.06 from Gilbert Strang](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/)
 * [Matrix Methods in Data Analysis, Signal Processing, and Machine Learning from Gilbert Strang](https://ocw.mit.edu/courses/mathematics/18-065-matrix-methods-in-data-analysis-signal-processing-and-machine-learning-spring-2018/index.htm)
 * [Introduction to Applied Linear Algebra – Vectors, Matrices, and Least Squares](http://vmls-book.stanford.edu/)using Julia language.
+* [Common statistical tests are linear models (or: how to teach stats)](https://lindeloev.github.io/tests-as-linear/)
+* [Course materials for applied regression STATS191 stanford](https://pratheepaj.github.io/teaching/stats191/)
 
 #### Bayesian Statistics
 
@@ -84,13 +150,16 @@ If you are from fields outside of biology, places to get you started:
 * [Doing Bayesian Data Analysis in brms and the tidyverse](https://bookdown.org/ajkurz/DBDA_recoded/) a book.
 
 ### Learning Latex
+
 * [draw your symbols](http://detexify.kirelabs.org/classify.html)
 * [The Best Way to Support LaTeX Math in Markdown with MathJax](https://yihui.org/en/2018/07/latex-math-markdown/)
 * [TinyTeX](https://yihui.org/tinytex/) A lightweight, cross-platform, portable, and easy-to-maintain LaTeX distribution based on TeX Live
 * Math expression http://www.math.mcgill.ca/yyang/regression/RMarkdown/example.html
 * [intro to Latex2](http://ctan.mirrors.hoobly.com/info/lshort/english/lshort.pdf) chapter 3
+* [The Bates LaTeX Manual](https://www.bates.edu/mathematics/resources/latex-manual/)
 
 ### Linux commands
+
 * [Greg Wilson's youtube videos on unix shell](https://www.youtube.com/watch?v=U3iNcBtycaQ)
 * [A Bioinformatician's UNIX Toolbox](http://lh3lh3.users.sourceforge.net/biounix.shtml#xargs) from Heng Li  
 * [Linux command line exercises for NGS data processing](http://userweb.eng.gla.ac.uk/umer.ijaz/bioinformatics/linux.html)  
@@ -144,7 +213,7 @@ A little note for seeing this things: with the less command you can view both st
 This will cause the ouput of a program to be written to a file.
 
          ls -l > ls-l.txt
-        
+
 Here, a file called 'ls-l.txt' will be created and it will contain what you would see on the screen if you type the command 'ls -l' and execute it.
 
 * stderr 2 file  
@@ -152,15 +221,15 @@ Here, a file called 'ls-l.txt' will be created and it will contain what you woul
 This will cause the stderr ouput of a program to be written to a file.
 
          grep da * 2> grep-errors.txt
-        
+
 Here, a file called 'grep-errors.txt' will be created and it will contain what you would see the stderr portion of the output of the 'grep da *' command.  
 
 * stdout 2 stderr
 
 This will cause the stderr ouput of a program to be written to the same filedescriptor than stdout.
 
-         grep da * 1>&2 
-        
+         grep da * 1>&2
+
 Here, the stdout portion of the command is sent to stderr, you may notice that in differen ways.  
 
 * stderr 2 stdout
@@ -168,15 +237,15 @@ Here, the stdout portion of the command is sent to stderr, you may notice that i
 This will cause the stderr ouput of a program to be written to the same filedescriptor than stdout.
 
          grep * 2>&1
-        
+
 Here, the stderr portion of the command is sent to stdout, if you pipe to less, you'll see that lines that normally 'dissapear' (as they are written to stderr) are being kept now (because they're on stdout).  
 
 * stderr and stdout 2 file
 
 This will place every output of a program to a file. This is suitable sometimes for cron entries, if you want a command to pass in absolute silence.
 
-         rm -f $(find / -name core) &> /dev/null 
-        
+         rm -f $(find / -name core) &> /dev/null
+
 This (thinking on the cron entry) will delete every file called 'core' in any directory. Notice that you should be pretty sure of what a command is doing if you are going to wipe it's output.
 
 * change permissions of files  
@@ -197,6 +266,7 @@ It is sometimes hard to remember. one can use the letter:The letters u, g, and o
 
 
 ### Do not give me excel files!
+
 * [scary-excel-stories](https://github.com/jennybc/scary-excel-stories/blob/master/README.md)
 * [convert xlsx to csv: xlsx2csv](https://github.com/dilshod/xlsx2csv)
 * [csvkit](http://csvkit.readthedocs.io/en/latest/index.html#)
@@ -210,6 +280,7 @@ It is sometimes hard to remember. one can use the letter:The letters u, g, and o
 * eBay's TSV Utilities: Command line tools for large, tabular data files. Filtering, statistics, sampling, joins and more. https://ebay.github.io/tsv-utils/
 
 ### How to name files
+
 It is really important to name your files correctly! see a [ppt](https://rawgit.com/Reproducible-Science-Curriculum/rr-organization1/master/organization-01-slides.html) by Jenny Bryan.
 
 Three principles for (file) names:
@@ -219,7 +290,7 @@ Three principles for (file) names:
 
 1. Put something numeric first  
 
-2. Use the ISO 8601 standard for dates (YYYY-MM-DD) 
+2. Use the ISO 8601 standard for dates (YYYY-MM-DD)
 
 3. Left pad other numbers with zeros  
 
@@ -251,7 +322,7 @@ Three principles for (file) names:
 4 2014-03-05 BRAFWTNEG   FFPEDNA-CRC-REPEAT  H03 csv   2014-03-05_BRAFWTNEG_FFPEDNA-CRC-REPEAT_H03.csv
 ```
 
-### parallelization 
+### parallelization
 
 Using these tool will greatly improve your working efficiency and get rid of most of your `for loops`.  
 1. [xargs](http://www.cyberciti.biz/faq/linux-unix-bsd-xargs-construct-argument-lists-utility/)  
@@ -262,15 +333,18 @@ Using these tool will greatly improve your working efficiency and get rid of mos
 6. [furrr](https://github.com/DavisVaughan/furrr) Apply Mapping Functions in Parallel using Futures
 
 ### Statistics
+
 * [Essence of linear algebra](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab)
 * [statistics for biologists](http://www.nature.com/collections/qghhqm) A collection of Nature articles on statistics in biology.
 
 ### Data transfer
+
 * keep an eye on the [dat project](https://datproject.org/)! https://blog.datproject.org/2018/04/24/data-sharing-at-institutions-and-beyond-with-dat/
 
 a blog post by Mark Ziemann http://genomespot.blogspot.com/2018/03/share-and-backup-data-sets-with-dat.html
 
 ### Website
+
 * [rmarkdown website](https://rmarkdown.rstudio.com/rmarkdown_websites.html)
 * [A step by step tutorial](https://gupsych.github.io/acadweb/index.html)
 * [Up and running with blogdown](https://alison.rbind.io/post/up-and-running-with-blogdown/)
@@ -283,6 +357,7 @@ a blog post by Mark Ziemann http://genomespot.blogspot.com/2018/03/share-and-bac
 
 
 ### updating R
+
 * [R upgrading can be a smooth process](http://dscinomics.com/post/2017-04-28-upgrade-to-r-3-4-0/)
 * [updating R](http://lcolladotor.github.io/2017/05/04/Updating-R/#.WSEQPrzyuqA) a blog post by L. Collado-Torres.
 * [update your R version in a breeze ( on OSX)](https://github.com/AndreaCirilloAC/updateR)
@@ -306,9 +381,35 @@ install.packages(pkgs)
 
 ```
 
-#### R tools for data wrangling, tidying and visualizing.  
+### Better R code
+
+* [assertr](https://github.com/ropensci/assertr)
+* [Tools for Working with ...](https://ellipsis.r-lib.org)
+* [here](https://github.com/jennybc/here_here)
+* [Inline testthat tests with roxygen2:roxytest](https://github.com/mikldk/roxytest)
+* [Non-invasive pretty printing of R code: styler](https://styler.r-lib.org)
+* [Static Code Analysis for R: lintr](https://github.com/jimhester/lintr) It checks adherence to a given style, syntax errors and possible semantic issues
+* [Make R a little bit stricter: strict](https://github.com/hadley/strict)
+also read[offensive programming Book](https://neonira.github.io/offensiveProgrammingBook_v1.2.1/)
+### Shiny App
+
+* [Omicsplayground)[https://github.com/bigomics/omicsplayground]
+* A Framework for Building Robust Shiny Apps [golem](https://thinkr-open.github.io/golem/)
+* [bootstrapllib}(https://rstudio.github.io/bootstraplib/) Tools for styling shiny and rmarkdown from R via Bootstrap (3 or 4) Sass
+
+
+### profile R code
+
+* [profvis](https://rstudio.github.io/profvis/) Interactive Visualizations for Profiling R Code.
+* [proffer](https://github.com/r-prof/proffer) The proffer package profiles R code to find bottlenecks.
+* [rco - The R Code Optimizer](https://jcrodriguez1989.github.io/rco/index.html) Make your R code run faster! rco analyzes your code and applies different optimization strategies that return an R code that runs faster.
+
+### R tools for data wrangling, tidying and visualizing.  
+
 * [Common statistical tests are linear models (or: how to teach stats)](https://lindeloev.github.io/tests-as-linear/)
 * [What They Forgot to Teach You About R](https://whattheyforgot.org/) by Jennifer Bryan, Jim Hester. you know it is good.
+Rstudio2020 https://rstudio-conf-2020.github.io/what-they-forgot/
+
 * [Fundamentals of Data Visualization](http://serialmentor.com/dataviz/) by Claus O. Wilke.
 * [from data to vis](https://www.data-to-viz.com) From Data to Viz leads you to the most appropriate graph for your data. It links to the code to build it and lists common caveats you should avoid.
 * [Data Visualization: A practical introduction](http://socviz.co/) A book by Kieran Healy from Duke University. Nice one to have!
@@ -323,13 +424,14 @@ install.packages(pkgs)
 * [glue](https://github.com/tidyverse/glue#usage) Glue strings to data in R. Small, fast, dependency free interpreted string literals
 * [purrr tutorial](https://jennybc.github.io/purrr-tutorial/index.html) by jenny bryan. functional programming in R.
 * [Row-oriented workflows in R with the tidyverse](https://github.com/jennybc/row-oriented-workflows) `pmap` is your friend :)
-* [janitor](https://github.com/sfirke/janitor) simple tools for data cleaning in R. 
+* [janitor](https://github.com/sfirke/janitor) simple tools for data cleaning in R.
 * [tidyeval resources](http://maraaverick.rbind.io/2017/08/tidyeval-resource-roundup/)
 * Rstudio [tidyeval video](https://www.rstudio.com/resources/webinars/tidy-eval/)
 * [Tidy evaluation, most common actions](https://edwinth.github.io/blog/dplyr-recipes/)
 * [Tidy Eval Meets ggplot2](http://www.onceupondata.com/2018/07/06/ggplot-tidyeval/) a blog post.
 * [Tidy evaluation in ggplot2](https://www.tidyverse.org/articles/2018/07/ggplot2-tidy-evaluation/) from tidyverse.
 * [tidyeval patterns](https://www.tidyverse.org/articles/2019/06/rlang-0-4-0/)
+* [Tidy eval now supports glue strings](https://www.tidyverse.org/blog/2020/02/glue-strings-and-tidy-eval/)
 * [Non-standard evaluation, how tidy eval builds on base R](https://edwinth.github.io/blog/nse/)
 * [My First Steps into The World of Tidy Eval](http://www.onceupondata.com/2017/08/12/my-first-steps-into-the-world-of-tidyeval/)
 * [tidyeval shiny app](https://ijlyttle.shinyapps.io/tidyeval/)
@@ -365,7 +467,7 @@ install.packages(pkgs)
 * [ggforce](https://github.com/thomasp85/ggforce/tree/facets): facet_zoom() to zoom in part of the figure! and many more.
 * [ggpubr](http://www.sthda.com/english/rpkgs/ggpubr/): ‘ggplot2’ Based Publication Ready Plots. add pvalues. this saves me from customerizing my ggplot2 figures.
 * [op 50 ggplot2 Visualizations - The Master List (With Full R Code)](http://r-statistics.co/Top50-Ggplot2-Visualizations-MasterList-R-Code.html)
-* [kableExtra](https://github.com/haozhu233/kableExtra) Construct Complex Table with knitr::kable() + pipe. 
+* [kableExtra](https://github.com/haozhu233/kableExtra) Construct Complex Table with knitr::kable() + pipe.
 * [ggedit](https://www.r-statistics.com/2016/11/ggedit-interactive-ggplot-aesthetic-and-theme-editor/?utm_content=buffer62da5&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer) – interactive ggplot aesthetic and theme editor.
 * [trelliscopejs](http://ryanhafen.com/blog/trelliscopejs) is an R package that brings faceted visualizations to life while plugging in to common analytical workflows like ggplot2 or the “tidyverse”.
 * [Plotting background data for groups with ggplot2](https://drsimonj.svbtle.com/plotting-background-data-for-groups-with-ggplot2?utm_campaign=Data%2BElixir&utm_medium=email&utm_source=Data_Elixir_92)
@@ -381,7 +483,7 @@ install.packages(pkgs)
 * [sinaplot](https://cran.r-project.org/web/packages/sinaplot/vignettes/SinaPlot.html): an enhanced chart for simple and truthful representation of single observations over multiple classes. `ggforce` has `geom_sina` for the same purpose.
 * [complexHeatmaps](https://bioconductor.org/packages/release/bioc/html/ComplexHeatmap.html)  
 * [superheat](https://github.com/rlbarter/superheat) Another heatmap package worth learning besides `ComplexHeatmap`. Not as flexiable as ComplexHeatmap, but can be handy when the function you want has been implemented.
-* [iheatmapr](https://github.com/AliciaSchep/iheatmapr) is an R package for building complex, interactive heatmaps using modular building blocks. 
+* [iheatmapr](https://github.com/AliciaSchep/iheatmapr) is an R package for building complex, interactive heatmaps using modular building blocks.
 * [heatmap:gapmap](https://cran.rstudio.com/web/packages/gapmap/vignettes/simple_example.html)
 * [dendsort](https://cran.r-project.org/web/packages/dendsort/index.html):Modular Leaf Ordering Methods for Dendrogram Nodes
 * [dendextend](https://cran.r-project.org/web/packages/dendextend/vignettes/introduction.html#changing-a-dendrograms-structure)
@@ -403,17 +505,26 @@ install.packages(pkgs)
 * [R for Data Science](http://r4ds.had.co.nz/) by Garrett Grolemund and Hadley Wickham
 
 ### Sankey graph
-* [ggalluvial](http://corybrunson.github.io/ggalluvial/index.html) 
+
+* [ggalluvial](http://corybrunson.github.io/ggalluvial/index.html)
 * [ggforce](https://github.com/thomasp85/ggforce/tree/sankey) `geom_parallel_sets()`
 * [Alluvial Diagrams with ggforce]
 
 ### Handling big data in R
+
 * [A data.table and dplyr tour](https://atrebas.github.io/post/2019-03-03-datatable-dplyr/) A blog post compare dplyr and data.table side by side.
 * [Lightning Fast Serialization of Data Frames for R](https://github.com/fstpackage/fst) faster than `data.table`, `feather`.
 * [Rpub post: Handling large data sets in R](https://rpubs.com/msundar/large_data_analysis)
 * [The disk.frame package aims to be the answer to the question: how do I manipulate structured tabular data that doesn’t fit into Random Access Memory (RAM)](https://github.com/xiaodaigh/disk.frame)
+* [`dtplyr` and `tidyfast` are teaming up (well, at least in this blog post)](https://tysonbarrett.com//jekyll/update/2019/12/03/workflow_dtplyr_tidyfast/)
+* [Fast reading of delimited files with vroom](https://vroom.r-lib.org) The fastest delimited reader for R, 1.40 GB/sec/sec.
+* [stash: Naive on-disk caching in R](https://github.com/iqis/stash)
+* [qs: Quick serialization of R objects](https://github.com/traversc/qs)
+* [The fst package](https://www.fstpackage.org/) for R provides a fast, easy and flexible way to serialize data frames. With access speeds of multiple GB/s, fst is specifically designed to unlock the potential of high speed solid state disks that can be found in most modern computers. Data frames stored in the fst format have full random access, both in column and rows.
+* The [arrow](https://github.com/apache/arrow/tree/master/r) package exposes an interface to the Arrow C++ library to access many of its features in R. This includes support for analyzing large, multi-file datasets (open_dataset()), working with individual Parquet (read_parquet(), write_parquet()) and Feather (read_feather(), write_feather()) files, as well as lower-level access to Arrow memory and messages.
 
 ### Write your own R package
+
 * [usethis workflow for package development](https://www.hvitfeldt.me/2018/09/usethis-workflow-for-package-development/)
 * [Developing R Packages with usethis and GitLab CI: Part I](https://blog.methodsconsultants.com/posts/developing-r-packages-using-gitlab-ci-part-i/)
 * [Writing an R package from scratch](https://r-mageddon.netlify.com/post/writing-an-r-package-from-scratch/) a blog post.
@@ -434,6 +545,7 @@ install.packages(pkgs)
 * [submitting your package to bioconductor](https://github.com/kuwisdelu/BiocMeetup/blob/master/2019-Jan/BioC-git-and-Github.pdf)
 
 ### Documentation
+
 * This is a must read for writing good documentations: A blog [post](https://www.divio.com/blog/documentation/). I saved it to a pdf and uploaded to this repo.
 
 ### handling arguments at the command line
@@ -443,6 +555,7 @@ install.packages(pkgs)
 * [Generate a CLI tool from a Python module/function](https://github.com/bharadwaj-raju/cligenerator)
 * [Introducing Python Fire, a library for automatically generating command line interfaces](https://opensource.googleblog.com/2017/03/python-fire-command-line.html)
 * [Patterns and anti-patterns for writing command-line bioinformatics software](https://github.com/ctb/titus-blog/blob/add/command_line_patterns/src/2018-our-command-line-patterns.md) by Titus.
+
 ### visualization in general
 
 * [Nature Methods point of view data visulization](http://blogs.nature.com/methagora/2013/07/data-visualization-points-of-view.html)
@@ -476,6 +589,7 @@ install.packages(pkgs)
 * [Practical Machine Learning with Python: standford crowd course](http://crowdcourse.stanford.edu/ml.html)
 
 ### Amazon cloud computing
+
 [Intro to AWS Cloud Computing](https://github.com/griffithlab/rnaseq_tutorial/wiki/Intro-to-AWS-Cloud-Computing#necessary-steps-for-launching-an-instance)
 
 ### Genomics-visualization-tools
@@ -486,7 +600,7 @@ see a nice post by using python by Radhouane Aniba:[Genomic Data Visualization i
 * [UCSC cancer genome browser](https://genome-cancer.ucsc.edu/proj/site/hgHeatmap/) It has many data including TCGA data buit in, and can be very handy for both bench scientist and bioinformaticians.  
 * [UCSC Xena](http://xena.ucsc.edu/). A new tool developed by UCSC team as well. Poteintially very useful, but need more tutorials to follow.
 * [UCSC genome browser](http://genome.ucsc.edu/). One of the most famous genome browser and my favoriate. **Every person** studying genetics, genomics and molecular biology needs to know how to use it. [Tutorials from OpenHelix](http://blog.openhelix.eu/?p=22649).  
-* [Epiviz 3](http://epiviz.github.io/index.html) is an interactive visualization tool for functional genomics data. It supports genome navigation like other genome browsers, but allows multiple visualizations of data within genomic regions using scatterplots, heatmaps and other user-supplied visualizations. 
+* [Epiviz 3](http://epiviz.github.io/index.html) is an interactive visualization tool for functional genomics data. It supports genome navigation like other genome browsers, but allows multiple visualizations of data within genomic regions using scatterplots, heatmaps and other user-supplied visualizations.
 * Mutation Annotation & Genome Interpretation TCGA: [MAGA](http://magi.brown.edu/)
 * [GeneProteinViz (GPViz)](http://icbi.at/software/gpviz/gpviz.shtml) is a versatile Java-based software for dynamic gene-centered visualization of genomic regions and/or variants.
 * [ProteinPaint: Web Application for Visualizing Genomic Data](https://pecan.stjude.org/proteinpaint/TP53/) The software developed for this project highlights critical attributes about the mutations, including the form of protein variant (e.g. the new amino acid as a result of missense mutation), the name of sample from which the mutation was identified, whether the mutation is somatic or germline,
@@ -539,8 +653,9 @@ see a nice post by using python by Radhouane Aniba:[Genomic Data Visualization i
 * [AACR Project GENIE](https://www.synapse.org/#!Synapse:syn7222066/wiki/405659) [data guide](https://github.com/crazyhottommy/getting-started-with-genomics-tools-and-resources/blob/master/GENIEDataGuide.pdf)
 
 ### Integrative analysis
+
 * [High-dimensional genomic data bias correction and data integration using MANCIE](http://www.nature.com/ncomms/2016/160413/ncomms11305/full/ncomms11305.html)  correct batch effects for data from different sequencing methods. (RNAseq vs ChIPseq)
-* 
+*
 
 ### Interactive visualization
 
@@ -548,6 +663,7 @@ see a nice post by using python by Radhouane Aniba:[Genomic Data Visualization i
 * [Introducing altair, an R interface to the Altair Python Package](https://vegawidget.rbind.io/post/2018-05-20-introducing-altair/)  which you can use to build and render Vega-Lite chart-specifications.
 
 ### Tutorials
+
 * [Ten quick tips for effective dimensionality reduction](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1006907) by Susan Holmes.
 * [PH525x series - Biomedical Data Science](http://genomicsclass.github.io/book/). Learn R and bioconductor.
 * [Principal Component Analysis Explained Visually](http://setosa.io/ev/principal-component-analysis/)  
@@ -558,7 +674,7 @@ see a nice post by using python by Radhouane Aniba:[Genomic Data Visualization i
 * [I wrote on PCA, and heatmaps on Rpub](https://rpubs.com/crazyhottommy)
 * A most read for clustering analysis for high-dimentional biological data:[Avoiding common pitfalls when clustering
 biological data](http://stke.sciencemag.org/content/9/432/re6)
-* [How does gene expression clustering work?](http://www.nature.com/nbt/journal/v23/n12/full/nbt1205-1499.html) A must read for 
+* [How does gene expression clustering work?](http://www.nature.com/nbt/journal/v23/n12/full/nbt1205-1499.html) A must read for
 clustering.
 * [How to read PCA plots for scRNAseq](http://www.nxn.se/valent/2017/6/12/how-to-read-pca-plots) by VALENTINE SVENSSON.
 
@@ -579,7 +695,7 @@ a bug was in `rtsne`: https://gist.github.com/mikelove/74bbf5c41010ae1dc94281cfa
 * [Understanding UMAP](https://pair-code.github.io/understanding-umap/) very nice one to read!
 
 * [Survival analysis of TCGA patients integrating gene expression (RNASeq) data](https://www.biostars.org/p/153013/)
-* [Tutorial: Machine Learning For Cancer Classification](https://www.biostars.org/p/85124/). It has four parts. 
+* [Tutorial: Machine Learning For Cancer Classification](https://www.biostars.org/p/85124/). It has four parts.
 * [Learning bash scripting for beginners](http://www.cyberciti.biz/open-source/learning-bash-scripting-for-beginners/)  
 * [Bedtools tutorial](http://quinlanlab.org/tutorials/cshl2013/bedtools.html)  
 * [Gemini](http://gemini.readthedocs.org/en/latest/#tutorials) explores your vcf, and [slides](https://speakerdeck.com/arq5x).
@@ -591,6 +707,7 @@ a bug was in `rtsne`: https://gist.github.com/mikelove/74bbf5c41010ae1dc94281cfa
 * [Google's R Style Guide](https://google.github.io/styleguide/Rguide.xml)
 
 ### MOOC(Massive Open Online Courses)
+
 * [The Open Source Data Science Masters](http://datasciencemasters.org/)
 * [Path to a free self-taught education in Data Science!](https://github.com/open-source-society/data-science)
 * [Path to a free self-taught education in Bioinformatics!](https://github.com/open-source-society/bioinformatics)
@@ -600,13 +717,14 @@ a bug was in `rtsne`: https://gist.github.com/mikelove/74bbf5c41010ae1dc94281cfa
 * [edx](https://www.edx.org/)
 
 ### git and version control
+
 * [git intro by github](https://github.github.io/on-demand/)
 * [How to Write a Git Commit Message](https://chris.beams.io/posts/git-commit/)
 * [Happy Git and GitHub for the useR](http://happygitwithr.com/) A book by Jenny Bryan.
 * [learn git branching](http://learngitbranching.js.org/)
 * [A Git Workflow Walkthrough Series](http://vallandingham.me/git-workflow.html)
 * [paper:A Quick Introduction to Version Control with Git and GitHub](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004668)
-* [paper:Ten Simple Rules for Taking Advantage of Git and GitHub](http://journals.plos.org/ploscompbiol/article?id=10.1371%2Fjournal.pcbi.1004947) 
+* [paper:Ten Simple Rules for Taking Advantage of Git and GitHub](http://journals.plos.org/ploscompbiol/article?id=10.1371%2Fjournal.pcbi.1004947)
 * [software carpentry git novice lesson](http://swcarpentry.github.io/git-novice/)
 * [git best practise](https://sethrobertson.github.io/GitBestPractices/)
 * [git-hub cheatsheet](https://github.com/tiimgreen/github-cheat-sheet#readme)
@@ -633,6 +751,7 @@ a bug was in `rtsne`: https://gist.github.com/mikelove/74bbf5c41010ae1dc94281cfa
 * [Dataone best practise Practices](https://www.dataone.org/best-practices)
 * [Research Data Management: A Primer Publication of the National Information Standards Organization](https://groups.niso.org/apps/group_public/download.php/15375/PrimerRDM-2015-0727%E2%80%A6)
 * [Data management for biologists](https://www.tjelvarolsson.com/blog/data-management-for-biologists/) A blog post by Tjelvar Olsson. Also check his [dtool](https://dtool.readthedocs.io/en/latest/philosophy.html)
+* [peppy]([http://code.databio.org/peppy/) is a python package that provides an API for handling standardized project and sample metadata. If you define your project in Portable Encapsulated Project (PEP) format.
 
 ### Automate your workflow, open science and reproducible research
 
@@ -646,35 +765,66 @@ a bug was in `rtsne`: https://gist.github.com/mikelove/74bbf5c41010ae1dc94281cfa
 
 The pic was downloaded from http://biobungalow.weebly.com/bio-bungalow-blog/everybody-knows-the-scientific-method
 
+#### Workflow languages
+
+##### Reviews
+
+* A [blog post](https://jmazz.me/blog/NGS-Workflows) comparing bash script, make, snakemake and nextflow.
+* [paper:A review of bioinformatic pipeline frameworks](http://bib.oxfordjournals.org/content/early/2016/03/23/bib.bbw020.long)
+* [Existing Workflow systems](https://github.com/common-workflow-language/common-workflow-language/wiki/Existing-Workflow-systems)
+* [Workflow management software for pipeline development in NGS](https://www.biostars.org/p/115745/)
+* [Awesome pipeline toolkit list](https://github.com/pditommaso/awesome-pipeline)
+
+##### Snakemake
+
+* [Snakemake](https://github.com/snakemake/snakemake) [[Docs](https://snakemake.readthedocs.io)] [[Publication](https://academic.oup.com/bioinformatics/article/28/19/2520/290322)]
+* [Snakemake tutorial from Titus Brown 2019](https://github.com/ctb/2019-snakemake-ucdavis)
+* [Snakemake tutorial from Titus Brown 2020](https://hackmd.io/jXwbvOyQTqWqpuWwrpByHQ?view)
+* [snakePipes: facilitating flexible, scalable and integrative epigenomic analysis](https://github.com/maxplanck-ie/snakepipes) [[Publication](https://academic.oup.com/bioinformatics/article/35/22/4757/5499080)]
+
+I am using snakemake and so far is very happy about it!
+
+##### Nextflow
+
+* [Nextflow](https://www.nextflow.io/) [[Docs](https://www.nextflow.io/docs/latest/index.html)] [[Publication](https://www.nature.com/articles/nbt.3820)]
+* [Nextflow DSL 2 modular syntax](https://www.nextflow.io/docs/latest/dsl2.html) [[Original GitHub issue](https://github.com/nextflow-io/nextflow/issues/984)]
+* [Nextflow Camp DSL 2 tutorial 2019](https://github.com/nextflow-io/nfcamp-tutorial)
+* [CZ Biohub Nextflow tutorial 2019](https://github.com/czbiohub/nextflow-tutorial-2019)
+* [Nextflow workshop tutorial 2018](https://nextflow-io.github.io/nf-hack18/)
+* [Nextflow pipeline examples](https://www.nextflow.io/example1.html)
+* [The nf-core framework for community-curated bioinformatics pipelines](https://nf-co.re/) [[Existing Workflows](https://nf-co.re/pipelines)] [[Publication](https://rdcu.be/b1GjZ)]
+* [Curated list of Nextflow pipelines](https://github.com/nextflow-io/awesome-nextflow)
+* [A Nextflow pipeline assembler for genomics](https://github.com/assemblerflow/assemblerflow) and [flowcraft](https://github.com/assemblerflow/flowcraft) Now you can track both the execution of a nextflowio pipeline AND the reports that it generates in real-time! You can even follow the reports (https://tinyurl.com/y854vftf ) and the pipeline execution.
+
+#### Reproducible research
+
 * [Awesome youtube video for reproducible workflow](https://www.youtube.com/watch?v=s3JldKoA0zw&feature=youtu.be)
+* [A Realistic Guide to Making Data Available Alongside Code to Improve Reproducibility](https://github.com/karthik/ddd)
 * A must read: [Managing the analysis of high-throughput sequencing data](http://www.biorxiv.org/content/early/2017/08/29/136358)
 * [Reproducibility starts at home](http://www.jonzelner.net/statistics/make/docker/reproducibility/2016/05/31/reproducibility-pt-1/) A series of blog posts by Jon Zelner.
+* [docker intro](https://staph-b.github.io/docker-builds/)
+* [cyverse Reproducibility Tour](https://learning.cyverse.org/projects/cyverse-cyverse-reproducbility-tutorial/en/latest/index.html#)
 * [Conda hacks for data science efficiency](http://ericmjl.com/blog/2018/12/25/conda-hacks-for-data-science-efficiency/)
 * [Practical Computational Reproducibility in the Life Sciences](https://www.cell.com/cell-systems/fulltext/S2405-4712(18)30140-6?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS2405471218301406%3Fshowall%3Dtrue) from Cell Systems.
 * [Analysis validation has been neglected in the Age of Reproducibility](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3000070)
 * [The Life & Times of a Reproducible Clinical Project](https://github.com/jenniferthompson/RMedicine2018) https://jenthompson.me/slides/rmedicine2018/rmedicine2018#1
+* [github Actions for R](https://speakerdeck.com/jimhester/github-actions-for-r)
+* [Automate testing of your R package using Travis CI, Codecov, and testthat](https://jef.works/blog/2019/02/17/automate-testing-of-your-R-package/) by Jean Fan.
 * [Reproducible computational environments using containers](https://dme26.github.io/docker-introduction/)
 * [docker intro by Cyverse](https://cyverse-cybercarpentry-container-workshop-2018.readthedocs-hosted.com/en/latest/docker/dockerintro.html) and [singularity](https://cyverse-container-camp-workshop-2018.readthedocs-hosted.com/en/latest/index.html) by upendra devisetty. I met him in UC Davis during 2018 ANGUS :)
 * [rocker/binder](https://github.com/rocker-org/binder) Adds binder abilities on top of the rocker/tidyverse images.
 * [Embedding containerized workflows inside data science notebooks enhances reproducibility](https://www.biorxiv.org/content/early/2018/05/02/309567)
 * [workflowr](https://jdblischak.github.io/workflowr/index.html): organized + reproducible + shareable data science in R
-* [Singularity](http://singularity.lbl.gov/) Singularity enables users to have full control of their environment. Singularity containers can be used to package entire scientific workflows, software and libraries, and even data. This means that you don’t have to ask your cluster admin to install anything for you - you can put it in a Singularity container and run. 
-* [EMBL-bioIT sigularity workshop](https://git.embl.de/grp-bio-it/singularity-training-2019)
+* [Singularity](http://singularity.lbl.gov/) Singularity enables users to have full control of their environment. Singularity containers can be used to package entire scientific workflows, software and libraries, and even data. This means that you don’t have to ask your cluster admin to install anything for you - you can put it in a Singularity container and run.
+* [EMBL-bioIT singularity workshop](https://git.embl.de/grp-bio-it/singularity-training-2019)
 * [countinous analysis](https://github.com/greenelab/continuous_analysis) [Reproducibility of computational workflows is automated using continuous analysis](http://www.nature.com/nbt/journal/v35/n4/full/nbt.3780.html)  
 * [The hard road to reproducibility](http://science.sciencemag.org/content/354/6308/142) commentary on Science Magzine.
 * [Five selfish reasons to work reproducibly](http://genomebiology.biomedcentral.com/articles/10.1186/s13059-015-0850-7) Genome Biology paper.
-* A [blog post](https://jmazz.me/blog/NGS-Workflows) comparing bash script, make, snakemake and nextflow.
-* [A Nextflow pipeline assembler for genomics](https://github.com/assemblerflow/assemblerflow) and [flowcraft](https://github.com/assemblerflow/flowcraft) Now you can track both the execution of a nextflowio pipeline AND the reports that it generates in real-time! You can even follow the reports (https://tinyurl.com/y854vftf ) and the pipeline execution.
-* [nextflow Process library aka modules](https://github.com/nextflow-io/nextflow/issues/984)
 * [Make lessons from software carpentry](http://swcarpentry.github.io/make-novice/)
 * [biomake](https://github.com/evoldoers/biomake) GNU-Make-like utility for managing builds and complex workflows.
 * [drake](https://github.com/ropensci/drake) An R-focused pipeline toolkit for reproducibility and high-performance computing. Snakemake in R.
 * [STAT545 Automating data analysis pipelines](https://stat545-ubc.github.io/automation00_index.html)
-* [Existing Workflow systems](https://github.com/common-workflow-language/common-workflow-language/wiki/Existing-Workflow-systems)
-* [Workflow management software for pipeline development in NGS](https://www.biostars.org/p/115745/)
-* [pipelines](https://github.com/pditommaso/awesome-pipeline)
 * [biostar post:Job Manager to parallelize otherwise consecutive bash scripts](https://www.biostars.org/p/174468/)
-* [paper:A review of bioinformatic pipeline frameworks](http://bib.oxfordjournals.org/content/early/2016/03/23/bib.bbw020.long)
 * [initial steps toward reproducible research](http://kbroman.org/steps2rr/#TAGC16)
 * [JupyterLab: the next generation of the Jupyter Notebook](http://blog.jupyter.org/2016/07/14/jupyter-lab-alpha/)
 * [Deepnote](https://www.deepnote.com) - Better UI for Jupyter and enables collaboration & working online without installing anything.
@@ -691,13 +841,10 @@ The pic was downloaded from http://biobungalow.weebly.com/bio-bungalow-blog/ever
 * [Ten Simple Rules for Digital Data Storage](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005097)
 * avoid `setwd()` in your R script. [`here_here()`](https://github.com/jennybc/here_here#readme) comes to rescue.
 
-
-I am using snakemake and so far is very happy about it!
-
 * **Have you ever had problem to reuse one of your own published figures due to copyright of the journal?**
 Here is the [solution](https://storify.com/LorenaABarba/reactions-to-my-tip-on-how-i-use-figshare)! from @LorenaABarba
 
->As an early adopter of the Figshare repository, I came up with a strategy that serves both our open-science and our reproducibility goals, and also helps with this problem: for the main results in any new paper, we would share the data, plotting script and figure under a CC-BY license, by first uploading them to Figshare. 
+>As an early adopter of the Figshare repository, I came up with a strategy that serves both our open-science and our reproducibility goals, and also helps with this problem: for the main results in any new paper, we would share the data, plotting script and figure under a CC-BY license, by first uploading them to Figshare.
 
 ### Survival curve
 
@@ -712,12 +859,14 @@ Here is the [solution](https://storify.com/LorenaABarba/reactions-to-my-tip-on-h
 * [survival analysis with TCGA](http://bioconnector.org/r-survival.html)
 
 ### Organize research for a group
+
 * [slack](https://slack.com/):A messaging app for teams.
 * [Ryver](http://www.ryver.com/ryver-vs-slack/).
 * [Trello](https://trello.com/) lets you work more collaboratively and get more done.
 
 
 ### Clustering
+
 * [densityCut](http://m.bioinformatics.oxfordjournals.org/content/early/2016/04/23/bioinformatics.btw227.short?rss=1): an efficient and versatile topological approach for automatic clustering of biological data
 * [Interactive visualisation and fast computation of the solution path: convex bi-clustering](https://www.youtube.com/watch?v=2g-akN6q8aI) by [Genevera Allen](http://www.stat.rice.edu/~gallen/software.html)
 [cvxbiclustr](https://cran.r-project.org/web/packages/cvxbiclustr/index.html) and the clustRviz package coming.
@@ -725,7 +874,8 @@ Here is the [solution](https://storify.com/LorenaABarba/reactions-to-my-tip-on-h
 * [iClusterPlus](https://www.bioconductor.org/packages/release/bioc/html/iClusterPlus.html) Integrative clustering of multiple genomic data using a joint latent variable model.  
 * [ConsensusClusterPlus](https://bioconductor.org/packages/release/bioc/html/ConsensusClusterPlus.html) algorithm for determining cluster count and membership by stability evidence in unsupervised analysis.
 
-### CRISPR related 
+### CRISPR related
+
 * [CRISPR GENOME EDITING MADE EASY](https://www.deskgen.com/landing/)
 * [CRISPR design from Japan](http://crispr.dbcls.jp/)
 * [CRISPResso](http://crispresso.rocks/):Analysis of CRISPR-Cas9 genome editing outcomes from deep sequencing data
@@ -742,8 +892,6 @@ Here is the [solution](https://storify.com/LorenaABarba/reactions-to-my-tip-on-h
 * [reactome icon](https://reactome.org/icon-lib)
 * [Inovative genomic Institute glossary](https://innovativegenomics.org/resources/educational-materials/glossary/)\  
 * https://smart.servier.com/category/cellular-biology/nucleic-acids/
-* https://www.vecteezy.com/ 
+* https://www.vecteezy.com/
 * https://www.freepik.com/
 * https://pixabay.com/
-
-

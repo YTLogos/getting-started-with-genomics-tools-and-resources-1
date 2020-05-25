@@ -1,3 +1,10 @@
+### add system env to check if you accidentally used && when comparing 2 vectors
+
+https://twitter.com/milesmcbain/status/1194029161490202625?s=12
+
+`Sys.setenv("_R_CHECK_LENGTH_1_LOGIC2_" = verbose)` and
+`Sys.setenv("_R_CHECK_LENGTH_1_CONDITION_" = TRUE)` 
+
 
 ### add a unique id for rows with the same values on columns 
 
@@ -1090,3 +1097,149 @@ gg_color_hue <- function(n) {
 n = 4
 cols = gg_color_hue(n)
 ```
+### split delimited strings in a column and insert as new rows
+
+https://stackoverflow.com/questions/15347282/split-delimited-strings-in-a-column-and-insert-as-new-rows
+
+
+```{r}
+
+> library(tidyr)
+> library(dplyr)
+> mydf
+
+  V1    V2
+2  1 a,b,c
+3  2   a,c
+4  3   b,d
+5  4   e,f
+6  .     .
+
+
+> mydf %>% 
+    mutate(V2 = strsplit(as.character(V2), ",")) %>% 
+    unnest(V2)
+
+   V1 V2
+1   1  a
+2   1  b
+3   1  c
+4   2  a
+5   2  c
+6   3  b
+7   3  d
+8   4  e
+9   4  f
+```
+
+or use `seperate_rows`:
+
+```{r}
+> head(mydf)
+geneid              chrom    start  end strand  length  gene_count
+ENSG00000223972.5   chr1;chr1;chr1;chr1;chr1;chr1;chr1;chr1;chr1    11869;12010;12179;12613;12613;12975;13221;13221;13453   12227;12057;12227;12721;12697;13052;13374;14409;13670   +;+;+;+;+;+;+;+;+   1735    11
+ENSG00000227232.5   chr1;chr1;chr1;chr1;chr1;chr1;chr1;chr1;chr1;chr1;chr1  14404;15005;15796;16607;16858;17233;17606;17915;18268;24738;29534   14501;15038;15947;16765;17055;17368;17742;18061;18366;24891;29570   -;-;-;-;-;-;-;-;-;-;-   1351    380
+ENSG00000278267.1   chr1    17369   17436   -   68  14
+ENSG00000243485.4   chr1;chr1;chr1;chr1;chr1    29554;30267;30564;30976;30976   30039;30667;30667;31097;31109   +;+;+;+;+   1021    22
+ENSG00000237613.2   chr1;chr1;chr1  34554;35277;35721   35174;35481;36081   -;-;-   1187    24
+ENSG00000268020.3   chr1    52473   53312   +   840 14
+
+
+> mydf %>% separate_rows(strand, chrom, gene_start, gene_end)
+geneid  length  gene_count  strand  chrom   start   end
+ENSG00000223972.5   1735    11  +   chr1    11869   12227
+ENSG00000223972.5   1735    11  +   chr1    12010   12057
+ENSG00000223972.5   1735    11  +   chr1    12179   12227
+ENSG00000223972.5   1735    11  +   chr1    12613   12721
+ENSG00000223972.5   1735    11  +   chr1    12613   12697
+ENSG00000223972.5   1735    11  +   chr1    12975   13052
+ENSG00000223972.5   1735    11  +   chr1    13221   13374
+ENSG00000223972.5   1735    11  +   chr1    13221   14409
+ENSG00000223972.5   1735    11  +   chr1    13453   13670
+ENSG00000227232.5   1351    380 -   chr1    14404   14501
+ENSG00000227232.5   1351    380 -   chr1    15005   15038
+ENSG00000227232.5   1351    380 -   chr1    15796   15947
+ENSG00000227232.5   1351    380 -   chr1    16607   16765
+ENSG00000227232.5   1351    380 -   chr1    16858   17055
+ENSG00000227232.5   1351    380 -   chr1    17233   17368
+ENSG00000227232.5   1351    380 -   chr1    17606   17742
+ENSG00000227232.5   1351    380 -   chr1    17915   18061
+ENSG00000227232.5   1351    380 -   chr1    18268   18366
+ENSG00000227232.5   1351    380 -   chr1    24738   24891
+ENSG00000227232.5   1351    380 -   chr1    29534   29570
+ENSG00000278267.1   68  5   -   chr1    17369   17436
+ENSG00000243485.4   1021    8   +   chr1    29554   30039
+ENSG00000243485.4   1021    8   +   chr1    30267   30667
+ENSG00000243485.4   1021    8   +   chr1    30564   30667
+ENSG00000243485.4   1021    8   +   chr1    30976   31097
+ENSG00000243485.4   1021    8   +   chr1    30976   31109
+ENSG00000237613.2   1187    24  -   chr1    34554   35174
+ENSG00000237613.2   1187    24  -   chr1    35277   35481
+ENSG00000237613.2   1187    24  -   chr1    35721   36081
+ENSG00000268020.3   840 0   +   chr1    52473   53312
+```
+
+If you concern about the speed see `data.table` solutions.
+https://stackoverflow.com/questions/13773770/split-comma-separated-strings-in-a-column-into-separate-rows
+
+```{r}
+library(data.table)
+# method 1 (preferred)
+setDT(v)[, lapply(.SD, function(x) unlist(tstrsplit(x, ",", fixed=TRUE))), by = AB
+         ][!is.na(director)]
+# method 2
+setDT(v)[, strsplit(as.character(director), ",", fixed=TRUE), by = .(AB, director)
+         ][,.(director = V1, AB)]
+```
+
+or even base R
+
+```{r}
+# if 'director' is a character-column:
+stack(setNames(strsplit(df$director,','), df$AB))
+
+# if 'director' is a factor-column:
+stack(setNames(strsplit(as.character(df$director),','), df$AB))
+```
+
+### rowwise tidyverse
+
+```{r}
+library(tidyverse) #dplyr version >=0.8.99.9000
+world_total_pop<- world_bank_pop %>%
+        filter(indicator == "SP.POP.TOTL")
+
+head(world_total_pop)
+country indicator `2000` `2001` `2002` `2003` `2004` `2005` `2006` `2007`
+  <chr>   <chr>      <dbl>  <dbl>  <dbl>  <dbl>  <dbl>  <dbl>  <dbl>  <dbl>
+1 ABW     SP.POP.T… 9.09e4 9.29e4 9.50e4 9.70e4 9.87e4 1.00e5 1.01e5 1.01e5
+2 AFG     SP.POP.T… 2.01e7 2.10e7 2.20e7 2.31e7 2.41e7 2.51e7 2.59e7 2.66e7
+3 AGO     SP.POP.T… 1.64e7 1.70e7 1.76e7 1.82e7 1.89e7 1.96e7 2.03e7 2.10e7
+....
+
+
+## calculate the mean of 2000 to 2007
+tidyr_way<- world_total_pop %>%
+        pivot_longer(starts_with("20")) %>%
+        group_by(country) %>%
+        mutate(mean = mean(value, na.rm = TRUE)) %>%
+        pivot_wider(names_from = name)
+
+purrr_across_way<- world_total_pop %>%
+        mutate(mean = pmap_dbl(across(starts_with("20")), 
+                                      ~mean(c(...), na.rm = TRUE)))
+
+# or  https://github.com/jennybc/row-oriented-workflows/blob/master/ex09_row-summaries.md
+purrr_across_way<- world_total_pop %>%
+        mutate(mean = pmap_dbl(select(., starts_with("20")), 
+                                      ~mean(c(...), na.rm = TRUE)))
+rowwise_flat_way<- world_total_pop %>%
+        rowwise() %>%
+        mutate(mean = mean(flatten_dbl(across(starts_with("20"))), na.rm =TRUE))
+
+tidybase_way<- world_total_pop %>% 
+        mutate(mean=rowMeans(across(starts_with("20")), na.rm = TRUE))
+```
+
+check https://github.com/jennybc/row-oriented-workflows as well. 
+https://github.com/jennybc/row-oriented-workflows/blob/master/ex09_row-summaries.md
